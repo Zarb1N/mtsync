@@ -2,10 +2,10 @@
 
 ## Команда
 **JavaStripters**:
-    - Афанасьев Степан: backend
-    - Минаев Павел: product
-    - Кузьмичев Павел: frontend
-    - Приходько Анастасия: design
+- Афанасьев Степан: backend
+- Минаев Павел: product
+- Кузьмичев Павел: frontend
+- Приходько Анастасия: design
 
 ## Схема приложени
 ![[Untitled Diagram.drawio.png]]
