@@ -1,0 +1,18 @@
+default:
+  before_script:
+    - docker info
+
+build_back:
+  stage: build
+  script:
+    - docker build -t thecntgfy/mtsync back/demo/
+
+build_front:
+  stage: build
+  script:
+    - docker build -t zarb1n/mtsync front/
+
+deploy:
+  stage: deploy
+  script:
+    - docker compose up -d

@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  nuxt:
+    build:
+      context: .
+    image: nuxt_dev
+    container_name: nuxt_dev
+    command: sh -c "npm i && npm run generate && npx serve .output/public"
+    volumes:
+    - .:/app
+    - /app/node_modules
+    ports:
+      - "80:3000"

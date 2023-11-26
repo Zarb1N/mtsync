@@ -1,0 +1,48 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        username: admin
+        password: admin
+      instance:
+        metadata:
+          user: admin
+          password: admin
+  datasource.url: jdbc:postgresql://localhost:5432/thecntgfy
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+    properties.javax.persistence.schema-generation:
+      database.action: update
+      create-source: metadata
+      scripts.action: update
+      scripts.create-target: update.sql
+
+app:
+  sound.path: /home/thecntgfy/projects/mtcync-preview/res/sound
+  jwt:
+    secret: reallysecretsecretsecretisaidsecret
+    expirationInMs: 100000000
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+hibernate:
+  cache:
+    use_second_level_cache: true
+    region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+
+#logging:
+#  level:
+#    root: error
+#    org:
+#      springframework:
+#        security: trace

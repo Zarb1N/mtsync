@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+	font-family: "MTS Sans Black";
+	src: local("MTS Sans"), url("~/assets/fonts/MTSSans-Black.ttf");
+}
+@font-face {
+	font-family: "MTS Sans Bold";
+	src: local("MTS Sans"), url("~/assets/fonts/MTSSans-Bold.ttf");
+}
+@font-face {
+	font-family: "MTS Sans Medium";
+	src: local("MTS Sans"), url("~/assets/fonts/MTSSans-Medium.ttf");
+}
+@font-face {
+	font-family: "MTS Sans Regular";
+	src: local("MTS Sans"), url("~/assets/fonts/MTSSans-Regular.ttf");
+}
+
+h1, h2, h3, h4 {
+	font-feature-settings: 'clig' off, 'liga' off !important;
+}
+h1 {
+	font-size: 2rem !important;
+	font-weight: 900 !important;
+	line-height: 2.5rem !important;
+	font-family: "MTS Sans Bold" !important;
+}
+h2 {
+	font-size: 1.25rem !important;
+	font-weight: 300 !important;
+	line-height: 1.5rem !important;
+	font-family: 'MTS Sans Bold' !important;
+}
+h3 {
+	font-size: calc(1rem + 1px) !important;
+	font-weight: 400 !important;
+	line-height: 1.5rem !important;
+	font-family: 'MTS Sans Medium' !important;
+}
+h4 {
+	font-family: 'MTS Sans Regular' !important;
+	font-size: 17px !important;
+	font-weight: 400 !important;
+	line-height: 1.5rem !important;	
+}
+p {
+	font-family: 'MTS Sans Regular' !important;
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	line-height: 1.25rem !important;
+}
+.hint {
+	font-family: 'MTS Sans Regular' !important;
+	color: var(--text-light-secondary);
+	font-size: 14px;
+}
+
+.bold {
+	font-weight: 700 !important;
+}
+
+.semi-bold {
+	font-weight: 500 !important;
+}
+
+.hint {
+	font-size: calc(14rem / 16) !important;
+	font-weight: 400 !important;
+	line-height: 1rem;
+}
+

@@ -1,0 +1,6 @@
+{
+  "appId": "com.mtsync",
+  "appName": "MTSync",
+  "webDir": ".output/public",
+  "bundledWebRuntime": false
+}

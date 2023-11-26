@@ -1,0 +1,15 @@
+
+:root {
+	/* Default */
+	--controls-light-primary-active: #E30611;
+	--secondary: #F2F3F7;
+	--main-dark: #1D2023;
+	--main-light: #ffffff; 
+	--background-light-secondary: #F2F3F7;
+
+	--text-light-secondary: #626C77;
+	--text-light-tertiary: #969FA8;
+	--text-light-headline: #000000;
+}
+
+

@@ -1,0 +1,30 @@
+version: "3"
+services:
+  app:
+    image: ${BACKEND_IMAGE:-thecntgfy/mtsync}
+    environment:
+      POSTGRES_DB: ${DB_NAME:-mtsync}
+      POSTGRES_USER: ${DB_USER:-mtsync}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-5d7gTKzS}
+      SOUND_PATH: /var/mtsync/sound
+    volumes:
+      - ./res/sound:/var/mtsync/sound
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_DB: ${DB_NAME:-mtsync}
+      POSTGRES_USER: ${DB_USER:-mtsync}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-5d7gTKzS}
+
+  front:
+    image: ${FRONTEND_IMAGE:-zarb1n/mtsync}
+    command: sh -c "npm i && npm run generate && npx serve .output/public"
+    ports:
+      - "3000:3000"
